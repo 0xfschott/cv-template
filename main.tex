@@ -1,0 +1,95 @@
+\documentclass{letter}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{wallpaper}
+\usepackage{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[scaled]{helvet}
+\usepackage{fontawesome5}
+\usepackage[hidelinks]{hyperref}
+\usepackage[none]{hyphenat}
+\usepackage{graphicx}
+\usepackage{tabularx}
+\usepackage{longtable}
+
+\renewcommand{\familydefault}{\sfdefault}
+\pagenumbering{gobble}
+
+\definecolor{darkblue}{RGB}{1, 22, 43}
+
+\geometry{
+ a4paper,
+ total={170mm,257mm},
+ left=20mm,
+ right=30mm,
+ top=20mm,
+ }
+
+\ThisCenterWallPaper{1.0}{cv_bg.png}
+\begin{document}
+\color{darkblue}
+\thispagestyle{empty}
+
+\noindent
+\begin{minipage}{0.2\textwidth}
+\vspace{-10pt}
+\includegraphics[width=\linewidth]{example-image} % Add your picture here
+\end{minipage}
+\hfill
+\begin{minipage}{0.5\textwidth}
+\vspace{-10pt}
+\raggedright
+{\Large \textbf{\textcolor{white}{Hans Dampf}}}\\
+{\large {\textcolor{white}{Senior Penetration Tester}}}\\
+\hfill \break
+{\textcolor{white}{\href{mailto:your@email.com} \faEnvelope \quad {your@email.com}}\\
+\vspace{2mm}
+{\textcolor{white}{\faPhone \quad +49 000000000}}\\
+\vspace{2mm}
+\textcolor{white}{\href{https://github.com/yourgithub} \faGithub \quad {github.com/yourgithub}}\\
+\vspace{2mm}
+\textcolor{white}{\href{FIXME} \faLinkedin \quad ...}\\
+\vspace{2mm}
+\textcolor{white}{\faMapMarker \quad Street, City}}
+\end{minipage}
+
+\vspace{2cm}
+
+{\Large\textbf{\faGraduationCap \quad Education}}\\
+\begin{longtable}{p{.25\textwidth} p{.75\textwidth}} 
+\textbf{Apr. 2016 - Aug. 2018} & \textbf{Degree, University, City}\\
+& \textit{\color{gray} \textbf{Thesis:} Title of your thesis}\\
+& ...
+\end{longtable}
+\vspace{0.2cm}
+
+{\Large\textbf{\faSuitcase \quad Work Experience}}\\
+\begin{longtable}{p{.25\textwidth} p{.75\textwidth}} 
+\textbf{Nov. 2020 - Today} & \textbf{Company Name}\\
+& \textbf{\color{gray} Postion}\\
+& \textnormal{\color{gray} \faAngleRight \quad Description of tasks, experiences, responsibilities}\\
+& ...
+\end{longtable}
+\vspace{0.2cm}
+
+{\Large\textbf{\faTerminal \quad Skills}}\\
+\begin{longtable}{p{.25\textwidth} p{.75\textwidth}}
+\color{darkblue}\textbf{Penetration Testing} & \textbf{Web Applications} \\
+ & \textit{\color{gray} \faAngleRight \quad Burp Suite Professional} \\
+ & ...
+\end{longtable}
+
+{\Large\textbf{\faCertificate \quad Certificates}}\\
+\begin{longtable}{p{.25\textwidth} p{.75\textwidth}}
+\textbf{2015} & Offensive Security Certified Professional (OSCP)\\
+\textbf{2013} & ...\\
+\end{longtable}
+
+\vspace{0.2cm}
+{\Large\textbf{\faGlobe \quad Languages}}\\
+\begin{longtable}{p{.25\textwidth} p{.75\textwidth}}
+\textbf{German} & Native \\
+\textbf{English} & Fluent\\
+ & ...
+\end{longtable}
+
+\end{document}
